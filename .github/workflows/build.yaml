@@ -12,6 +12,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+        with:
           java-version: '17'
       - id: get-project
         name: Get project name
